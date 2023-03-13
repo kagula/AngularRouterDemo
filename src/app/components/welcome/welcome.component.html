@@ -1,0 +1,24 @@
+<h1>Welcome Page</h1>
+
+<div class="content" role="main">
+  <div>
+    <a [routerLink]="['/workspace']">
+      <i>Example of Go to next page by link.</i>
+    </a>
+  </div>
+
+  <div>
+    <a routerLink="/workspace">
+      <i>Example of Go to next page by link (Adopt the another writing style do not affect functionality).</i>
+    </a>
+  </div>
+
+  <div>
+    <button routerLink="/workspace">Example of Go to next page by button.</button>
+  </div>
+
+  <div>
+    <button routerLink="/workspace" (click)="gotoNextPage()">Example of the type script of go to next page.</button>
+  </div>
+</div>
+

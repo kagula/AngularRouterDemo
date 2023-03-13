@@ -1,27 +1,31 @@
-# AngularRouterDemo
+# Angular Router Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+## Environment
 
-## Development server
+- Microsoft Windows [Version 10.0.19044.2604]
+- Visual Studio Community 2022 Version 17.5.1
+- [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+- NPM Version 9.50  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## The Component of Angular
+The component is like the window concept from C++ Windows Program that can be a controller or can be a sub page or page.
+The new component consists of the following four files
+- XX.component.ts (Like Back End)
+- XX.component.spec.ts (We don't care this file)
+- XX.component.css (Like the style of Front End)
+- XX.component.html (Like Front End)  
+We use ***ng generate component XX*** command to generate the new component with app.module.ts  
+If you have multi module you can using the below command to generate the new component.  
+ ***ng generate component XX --module XX.module.ts***   
+ Where XX is the name of a component or a module.    
+   
+Exampe of Generate New Component With app.module.ts  
+\<The prefix of project path>\\src\\app\>ng generate component components/content1  
+That will generate the following messages:  
+- CREATE src/app/components/content1/content1.component.html (23 bytes)
+- CREATE src/app/components/content1/content1.component.spec.ts (613 bytes)
+- CREATE src/app/components/content1/content1.component.ts (210 bytes)
+- CREATE src/app/components/content1/content1.component.css (0 bytes)
+- UPDATE src/app/app.module.ts (415 bytes)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

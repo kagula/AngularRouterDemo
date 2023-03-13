@@ -1,0 +1,27 @@
+
+<div class="container toolbar">
+  <div class="row">
+    <div class="col-">
+
+      <!-- Example of routerLinkActive Attribute -->
+      <!-- Last clicked link will be applied the style class active -->
+      <a routerLink="/workspace/content1" routerLinkActive="active">
+        <i>[Content1]</i>
+      </a>
+
+      <!-- Further reading Ref. https://angular.io/start/start-routing -->
+      <a [routerLink]="['/workspace/content2', 123]" routerLinkActive="active" class="ms-1">
+        <i>[Content2]</i>
+      </a>
+
+      <a routerLink=".." class="ms-1">
+        <i>Return to Parent Page</i>
+      </a>
+
+      <button type="button" class="btn btn-dark ms-1 px-2" (click)="back()">
+        Return to Parent Page by Type Script
+      </button>
+
+    </div>
+  </div>
+</div>
